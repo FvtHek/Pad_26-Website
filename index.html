@@ -1,20 +1,18 @@
 <html>
 <head>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="https://openlayers.org/en/v4.1.0/css/ol.css" type="text/css">
-  <script src="https://openlayers.org/en/v4.1.0/build/ol.js"></script>
+<link rel="stylesheet" href="https://openlayers.org/en/v4.1.0/css/ol.css" type="text/css">
+<script src="https://openlayers.org/en/v4.1.0/build/ol.js"></script>
 </head>
 <body>
   <div id="map" class="map"></div>
   <script>
-    var planet_url = "https://tiles.planet.com/data/v1/PSScene3Band/20161221_024131_0e19/{z}/{x}/{y}.png?api_key=your-api-key"
+    var planet_url = "https://tiles.planet.com/data/v1/PSScene3Band/20161221_024131_0e19/{z}/{x}/{y}.png?api_key=f51c20852af9405ea84274f672d6baff"
     var map = new ol.Map({
       layers: [
         // Layer 1, Open Street Map base layer
         new ol.layer.Tile({
           source: new ol.source.OSM()
-        });
-        ,
+        }),
         // Layer 2, A single Planet item
         new ol.layer.Tile({
           source: new ol.source.XYZ({url: planet_url})
@@ -23,7 +21,7 @@
       target: 'map',
       view: new ol.View({
         center: [0, 0],
-        zoom: 0
+        zoom: 4
       })
     });
   </script>
