@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://openlayers.org/en/v4.1.0/css/ol.css" type="text/css">
-<script src="https://openlayers.org/en/v4.1.0/build/ol.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -53,14 +51,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Xpose</a>
+      <a class="navbar-brand" href="index.html">Xpose</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="http://www.planet.com">Planet</a> </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Planet</a></li>
         <li><a href="Over ons.html">About us</a></li>
-        <li><a href="Contact.html">Contact </a></li>
+        <li class="active"><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -73,33 +71,21 @@
 <div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p>Filters</p>
-      <form action="">
-  <input type="checkbox" name="vehicle" value="Bike">  Show heatmap filter<br>
-  </form>
     </div>
     <div class="col-sm-8 text-left">
-      <div id="map" class="map"></div>
-   <script>
-     var planet_url = "https://tiles.planet.com/data/v1/PSScene3Band/20161221_024131_0e19/{x}/{z}/{y}.png?api_key=f51c20852af9405ea84274f672d6baff"
-     var map = new ol.Map({
-       layers: [
-         // Layer 1, Open Street Map base layer
-         new ol.layer.Tile({
-           source: new ol.source.OSM()
-         }),
-         // Layer 2, A single Planet item
-         new ol.layer.Tile({
-           source: new ol.source.XYZ({url: planet_url})
-         })
-       ],
-       target: 'map',
-       view: new ol.View({
-         center: [0, 0],
-         zoom: 1.5
-       })
-     });
-   </script>
+      <h1>Contact <br></h1>
+
+      <p>
+        We can be contacted with the following ways: <br><br>
+        tel: 06-123456789 <br>
+        mail: xposehelp@yahoo <br>
+        fax: faxfax <br>
+      </p>
+    </div>
+    <div class="col-sm-2 sidenav">
+
+
+      </div>
     </div>
   </div>
 </div>
